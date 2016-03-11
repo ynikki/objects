@@ -15,7 +15,7 @@ console.log(plainBox.color);
 var stockCar = {
 	model : 'Yaris',
 	year : 2009,
-	automaticTransmission : [ 5, 6, 7],
+	automaticTransmission : 'yes',
 	driver : null,
 	passengers : [],
 };
@@ -126,9 +126,15 @@ sumFunction(newObj);
 /* Putting Stuff In PlainBox */
 
 
-function plainBox(stuff){
-	for(var i = 0; i < stuff.length; i++){
-		
-	}
-
+function puttingStuffInPlainBox(stuff){
+	for(var i = 0; i < 10; i++){
+		var randomNumb = Math.floor((Math.random() * 10) + 1); 
+		stuff.contents.push(randomNumb);
+	 }
+	 return stuff;
+	//console.log(stuff.contents);
 }
+
+console.log(puttingStuffInPlainBox(plainBox));
+
+
