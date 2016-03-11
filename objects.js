@@ -117,8 +117,18 @@ console.log(additionObj(newObj));
 
 /* Print Sum Function And Add As New Key-Value */
 
-function sumFunction(addNewKeyValue){
+function sumFunction(obj){
+	console.log( " ' " + newObj.a + ' + ' + newObj.b + ' = ' + newObj.result + " ' ");	
+} 
+
+sumFunction(newObj);
+
+/* Putting Stuff In PlainBox */
+
+
+function plainBox(stuff){
+	for(var i = 0; i < stuff.length; i++){
+		
+	}
 
 }
-
-
