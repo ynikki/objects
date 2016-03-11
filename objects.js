@@ -15,7 +15,7 @@ console.log(plainBox.color);
 var stockCar = {
 	model : 'Yaris',
 	year : 2009,
-	automaticTransmission : 'yes',
+	automaticTransmission : true,
 	driver : null,
 	passengers : [],
 };
@@ -137,4 +137,16 @@ function puttingStuffInPlainBox(stuff){
 
 console.log(puttingStuffInPlainBox(plainBox));
 
+
+/* Detecting Transmission */
+
+function detectingTransmission(trans){
+	if(trans.automaticTransmission === true){
+		return "vRoOoom!";
+	}else{
+		return "BoOooo!";
+	}
+}
+
+console.log(detectingTransmission(stockCar));
 
